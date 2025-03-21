@@ -1,6 +1,6 @@
 from abc import ABC
 
-from BaseScraper import BaseScraper
+from Scrapers.BaseScraper import BaseScraper
 from DAOs.Job import Job
 
 

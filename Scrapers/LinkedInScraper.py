@@ -1,11 +1,11 @@
 from abc import ABC
 from bs4 import BeautifulSoup
 
-from BaseScraper import BaseScraper
+from Scrapers.BaseScraper import BaseScraper
 from DAOs.Job import Job
 
 
-class LinkedinScraper(BaseScraper, ABC):
+class LinkedInScraper(BaseScraper, ABC):
     def __init__(self):
         super().__init__()
 

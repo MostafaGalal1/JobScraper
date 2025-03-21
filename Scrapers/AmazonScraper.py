@@ -1,14 +1,14 @@
 import json
 from abc import ABC
 
-from BaseScraper import BaseScraper
+from Scrapers.BaseScraper import BaseScraper
 from DAOs.Job import Job
 
 
 class AmazonScraper(BaseScraper, ABC):
     def __init__(self):
         super().__init__()
-        with open("../Utils/ISO-3166-1-alpha-3.json", "r", encoding="utf-8") as file:
+        with open("Utils/ISO-3166-1-alpha-3.json", "r", encoding="utf-8") as file:
             self.country_mapping = json.load(file)
 
     def get_scrape_url(self):

@@ -1,7 +1,7 @@
 from abc import ABC
 from os import environ
 
-from BaseScraper import BaseScraper
+from Scrapers.BaseScraper import BaseScraper
 from DAOs.Job import Job
 
 

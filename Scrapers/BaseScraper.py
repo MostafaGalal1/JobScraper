@@ -14,9 +14,10 @@ class BaseScraper(ABC):
         # Scrape
         scrape_url = self.get_scrape_url()
         jobs = self.parse_jobs(scrape_url)
+        return jobs
 
         # Save
-        self.save_jobs(jobs)
+        # self.save_jobs(jobs)
 
     @abstractmethod
     def get_scrape_url(self):
