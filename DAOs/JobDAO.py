@@ -1,4 +1,4 @@
-from config.database import Database
+from Config.database import Database
 
 
 class JobDAO:
